@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Juego Piedra, Papel o Tijera</title>
+        <link rel="stylesheet" href="./assets/estilos.css">
+        <script type="text/javascript" src="./assets/juego.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main class="contenedor">
+        <h1>Piedra, Papel o Tijera</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae nulla maiores totam mollitia ipsa labore quo incidunt, fugit numquam voluptate error quis veritatis qui expedita dolor quam eligendi! Atque, facilis.</p>
+
+        <div class="cards">
+            <div class="botones" onclick="juego('1');" id="piedra">Piedra</div>
+            <div class="botones" onclick="juego('2');" id="papel">Papel</div>
+            <div class="botones" onclick="juego('3');" id="tijera">Tijera</div>
+        </div>
+        
+        <section class="resultados">
+        <div id="eleccion"></div>
+        <div id="resultado"></div>
+        <div id="destacado"></div>
+        </section>
+        </main>
+        <script>juego();</script>
+
+    </body>
+</html>
